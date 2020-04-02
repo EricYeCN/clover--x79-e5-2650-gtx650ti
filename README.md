@@ -62,4 +62,4 @@ macOS兼容性:
 注意：这不是有偿协助，我的时间非常有限，共勉！
 
 
-![image](https://github.com/EricYeCN/clover--x79-e5-2650-gtx650ti/blob/ffbce0f4692d243d1d41212f0413672a216c2d36/temp.jpg?raw=true)
+![Image text](https://github.com/EricYeCN/clover--x79-e5-2650-gtx650ti/blob/ffbce0f4692d243d1d41212f0413672a216c2d36/temp.jpg)

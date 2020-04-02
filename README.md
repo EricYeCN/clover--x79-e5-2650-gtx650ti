@@ -20,10 +20,15 @@ CPU：E5-2650 V1
 macOS兼容性:
 
 10.10 Yosemite: 未测试.
+
 10.11 El Capitan: 未测试.
+
 10.12 macOS Sierra: 未测试.
+
 10.13.4 macOS High Sierra: 良好.
+
 10.14.5 macOS Mojave: 安装到启动三次进入系统之前，提示“找不到安装资源
+
 10.15 beta macOS Catalina: 未测试..
 
 
@@ -34,6 +39,8 @@ macOS兼容性:
 关闭串口 (Serial Port)
 
 禁用 USB ECHI
+
 开启 USB XHCI
+
 禁用 intel虚拟技术
 

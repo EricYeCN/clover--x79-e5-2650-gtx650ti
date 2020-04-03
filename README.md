@@ -48,15 +48,16 @@ CPU：E5-2650 V1
 
 找到了黑果小兵的部落阁https://blog.daliansky.net
 内容比较全有最新的原版镜像。有各种安装帮助文档。<br>
-## 先看看 黑苹果支持的显卡列表https://blog.daliansky.net/Mojave-Hardware-Support-List.html
+## 先看看 <br>
+黑苹果支持的显卡列表https://blog.daliansky.net/Mojave-Hardware-Support-List.html
 <br>我的显卡是GTX650TI,列表中有显示有可能花屏或闪屏，有安装10.10.5的成功经验，我想我可以试试。
 
-##  再看看  
+##  再看看  <br>
 
 Hackintosh黑苹果长期维护机型整理清单 https://blog.daliansky.net/Hackintosh-long-term-maintenance-model-checklist.html
 
 找到适合（或接近）自已PC的EFI，下载备用。<br>
-一个8G以上的U盘;还要用一个U盘PE启动盘。
+一个8G以上的U盘;还要用一个U盘PE启动盘。<br>
 DiskGenius(分区工具)；http://www.diskgenius.cn/download.php<br>
 MacOS镜像写入工具balenaEtcher-Portable https://mac.softpedia.com/get/Utilities/Etcher.shtml<br>
 EasyUEF(系统引导编辑工具) http://www.ddooo.com/softdown/134088.htm<br>
@@ -111,7 +112,7 @@ IOConsoleUsers: gIOScreenLockState 3, hs 0, bs 0, nov 0, sm 0x0<br>
 取消勾选Inject Intel<br>
 或者将platform-id修改为0x12345678<br>
 不知道如何操作的请移步Clover使用教程 https://blog.daliansky.net/clover-user-manual.html <br>
-其实就是EFI不匹配你的显卡，找个适合的EFI即可。<br>
+### 其实就是EFI不匹配你的显卡，找个适合的EFI即可。<br>
 
 先“抹盘”再“安装macOS"启动两遍，选择语言，设置用户名，设置键盘，顺利的话进入系统。<br>
 ### 卡在哪记下提示，自行百度，<br>
@@ -136,6 +137,10 @@ select partition n  # 选择EFI分区，n为EFI分区号<br>
 set id="ebd0a0a2-b9e5-4433-87c0-68b6b72699c7"	# 设置为EFI分区<br>
 assign letter=X     # x为EFI分区盘符<br>
 
+# 用EasyUEFI引导工具填加硬盘 macOS启动项
+
+管理EFI启动项->新建引也项按钮->选择目标分区（Linux或者其它操作系统）->描述（填写自已想要的macOS名称）->选择自己硬盘ESP分区->浏览选中EFI\CLOVER\CLOVERX64.EFI文件->确定。<br>
+如果将此引启项设置第一位，开机就可启动macOS,如果不设置第一位，想启动macOS就要在bios中boot菜单中选择该启动项才能启动macOS。<br>
 
 
 

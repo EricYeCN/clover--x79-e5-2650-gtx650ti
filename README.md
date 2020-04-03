@@ -114,19 +114,34 @@ IOConsoleUsers: gIOScreenLockState 3, hs 0, bs 0, nov 0, sm 0x0<br>
 其实就是EFI不匹配你的显卡，找个适合的EFI即可。<br>
 
 先“抹盘”再“安装macOS"启动两遍，选择语言，设置用户名，设置键盘，顺利的话进入系统。<br>
-### 卡在哪记下提示，自行百度，
-### 注意安装时卡住15分钟以上为卡死，才可重启，要有耐心，亲。
+### 卡在哪记下提示，自行百度，<br>
+### 注意安装时卡住15分钟以上为卡死，才可重启，要有耐心，亲。<br>
 
-### 设置硬盘启动macOS
+### 设置硬盘启动macOS<br>
 
-U盘安装完macOS，硬盘还启动不了macOS,这时就得把U盘EFI分区中 EFI\clover目录复制到 硬盘EF分区的EFI目录
-方法1：用DiskGenius复制
-方法2：手动读取硬盘EFI分区。
+U盘安装完macOS，硬盘还启动不了macOS,这时就得把U盘EFI分区中 EFI\clover目录复制到 硬盘EF分区的EFI目录<br>
+方法1：用DiskGenius复制<br>
+方法2：手动读取硬盘EFI分区。<br>
+教你将U盘上的EFI复制到磁盘的EFI分区,脱离USB运行[Windows篇]
+
+## 挂载EFI分区
+
+Windows操作系统下面,打开cmd窗口,输入命令:<br>
+
+diskpart<br>
+list disk           # 磁盘列表<br>
+select disk n       # 选择EFI分区所在的磁盘，n为磁盘号<br>
+list partition      # 磁盘分区列表<br>
+select partition n  # 选择EFI分区，n为EFI分区号<br>
+set id="ebd0a0a2-b9e5-4433-87c0-68b6b72699c7"	# 设置为EFI分区<br>
+assign letter=X     # x为EFI分区盘符<br>
+
+
 
 
 # 资助
 
-我花费了一些时间和精力在上面，如果此项目帮助到了您，欢迎来资助我继续完善它。
+我花费了一些时间和精力在上面，如果此项目帮助到了您，欢迎来资助我继续完善它，谢谢！。
 
 微信支付后还有个 留言 功能。如果只是在付款时填写“求助”而没有再留言，我是联系不上你的喔，下面单独填写的“手机号”我并不能看得见。我的邮箱是ye_bin@sina.com。
 

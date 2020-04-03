@@ -89,8 +89,8 @@ macOS 10.13.2 https://blog.daliansky.net/macOS-High-Sierra-10.13.2-(17C88)-offic
 
 禁用 intel虚拟技术
 
-硬盘模式设置为AHCI，关闭Secure Boot，关闭intel虚拟技术,UEFI Boot设置为 Enabled,在BOOT菜单中选择UEFI:+U盘名称， 启动。<BR>
-选中 Boot macOS Install from macOS Hight Sierra 按空格 ，移到 -v参数按空格选中。这处过程出错最多，大多是显卡无法驱动或BIOS设置错，请自行百度。<br>
+硬盘模式设置为AHCI，关闭Secure Boot，UEFI Boot设置为 Enabled,在BOOT菜单中选择UEFI:+U盘名称， 启动。<BR>
+选中 Boot macOS Install from macOS Hight Sierra 按空格 ，移到 -v参数按空格选中。此过程出错最多，大多是显卡无法驱动或BIOS设置错，请自行百度。<br>
 
 ### 安装提示安装macOS 应用程序副本已损坏，不能用来安装macOS的解决方法
 
@@ -123,14 +123,14 @@ IOConsoleUsers: gIOScreenLockState 3, hs 0, bs 0, nov 0, sm 0x0<br>
 ### 卡在哪记下提示，自行百度，<br>
 ### 注意安装时卡住15分钟以上为卡死，才可重启，要有耐心，亲。<br>
 
-### 设置硬盘启动macOS<br>
+### 设置硬盘启动macOS<br>你将U盘上的EFI复制到磁盘的EFI分区,脱离USB运行
+
 
 U盘安装完macOS，硬盘还启动不了macOS,这时就得把U盘EFI分区中 EFI\clover目录复制到 硬盘EF分区的EFI目录<br>
 方法1：用DiskGenius复制<br>
 
 方法2：手动读取硬盘EFI分区。<br>
 
-教你将U盘上的EFI复制到磁盘的EFI分区,脱离USB运行[Windows篇]
 
 ## 挂载EFI分区
 

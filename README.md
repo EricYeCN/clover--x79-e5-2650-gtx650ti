@@ -28,7 +28,7 @@ CPU：E5-2650 V1
 
 # macOS兼容性:
 
-10.10 Yosemite: 未测试.
+10.10 Yosemite: 良好.
 
 10.11 El Capitan: 未测试.
 
@@ -70,7 +70,8 @@ macOS 10.13.2 https://blog.daliansky.net/macOS-High-Sierra-10.13.2-(17C88)-offic
 用U盘PE启动盘启动，先用ghost备份win10到机械硬盘，再用其中的DiskGenius进行分区（***分区有风险 ）* ，我的240G固态按分为500m EFI,200m MRB，120G ntfs，将备份的ghost文件恢复到120G分区,剩下的空间需要在win10中我的电脑 ，右键，管理，磁盘管理 ，进行分区，新建简单卷，不给盘符，不格式化为RAW格式。<br>
 
 启动win10，插入写好MacOS镜像的U盘，删除U盘的 EFI分区中clover目录中的内容， 将下载好的clover目录中的内容复制到U盘对应位置<br>
-
+方法1：用DiskGenius复制
+方法2：win10手动
 
 ### 进入BIOS <BR>
 
@@ -112,8 +113,15 @@ IOConsoleUsers: gIOScreenLockState 3, hs 0, bs 0, nov 0, sm 0x0<br>
 不知道如何操作的请移步Clover使用教程 https://blog.daliansky.net/clover-user-manual.html <br>
 其实就是EFI不匹配你的显卡，找个适合的EFI即可。<br>
 
+先“抹盘”再“安装macOS"启动两遍，选择语言，设置用户名，设置键盘，顺利的话进入系统。<br>
+### 卡在哪记下提示，自行百度，
+### 注意安装时卡住15分钟以上为卡死，才可重启，要有耐心，亲。
 
+### 设置硬盘启动macOS
 
+U盘安装完macOS，硬盘还启动不了macOS,这时就得把U盘EFI分区中 EFI\clover目录复制到 硬盘EF分区的EFI目录
+方法1：用DiskGenius复制
+方法2：手动读取硬盘EFI分区。
 
 
 # 资助

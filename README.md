@@ -34,11 +34,11 @@ CPU：E5-2650 V1
 
 10.12 macOS Sierra: 未测试.
 
-10.13.4 macOS High Sierra: 良好.
+10.13.2 macOS High Sierra: 良好.
 
 10.14.5 macOS Mojave: 安装到启动三次进入系统之前，提示“找不到安装资源
 
-10.15 beta macOS Catalina: 未测试..
+10.15 beta macOS Catalina: 未成功..
 
 
 

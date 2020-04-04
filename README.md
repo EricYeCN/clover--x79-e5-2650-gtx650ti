@@ -73,7 +73,7 @@ macOS 10.13.2 https://blog.daliansky.net/macOS-High-Sierra-10.13.2-(17C88)-offic
 
 用balenaEtcher-Portable刻录到U盘，注意执行balenaEtcher-Portable要用鼠标右键管理员模式<br>
 
-用U盘PE启动盘启动，先用ghost备份win10到机械硬盘，再用其中的DiskGenius进行分区（***分区有风险 ）* ，我的240G固态按分为500m EFI,200m MRB，120G ntfs，将备份的ghost文件恢复到120G分区,剩下的空间需要在win10中我的电脑 ，右键，管理，磁盘管理 ，进行分区，新建简单卷，不给盘符，不格式化为RAW格式。<br>
+用U盘PE启动盘启动，先用ghost备份win10到机械硬盘，再用其中的DiskGenius进行分区（***分区有风险 ）* ，我的240G固态按分为500m EFI,200m MRB，120G ntfs，将备份的ghost文件恢复到120G分区,剩下的空间需要在win10中我的电脑 ，右键，管理，磁盘管理 ，进行分区，新建简单卷，不给盘符，不格式化，默认为RAW格式。<br>
 
 启动win10，插入写好MacOS镜像的U盘，删除U盘的 EFI分区中clover目录中的内容， 将下载好的clover目录中的内容复制到U盘对应位置<br>
 方法1：用DiskGenius复制<br>
